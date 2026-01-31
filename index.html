@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Banner Slider</title>
+</head>
+
+<body>
+
+<section class="banner_slider ">
+    <div class="slide">
+        <div class="slide_content">
+            <p>welcome to home Interior</p>
+            <h2>Making Your Home More Beautiful</h2>
+            <div class="button_warp">
+                <a href="#" class="btn btn_transparent">view more</a>
+                <a href="#" class="btn">our portfolio</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide slide_two">
+        <div class="slide_content">
+            <p>welcome to home Interior</p>
+            <h2>Best Ideas For Your Home Interiors</h2>
+            <div class="button_warp">
+                <a href="#" class="btn btn_transparent">view more</a>
+                <a href="#" class="btn">our portfolio</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide slide_three">
+        <div class="slide_content">
+            <p>welcome to home Interior</p>
+            <h2>Modern Design & Stylish Living</h2>
+            <div class="button_warp">
+                <a href="#" class="btn btn_transparent">view more</a>
+                <a href="#" class="btn">our portfolio</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Slick JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<!-- Slider Script -->
+<script>
+$(document).ready(function () {
+    $('.banner_slider').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        drag: true,
+        prevArrow: '<div class="slick-arrow prev"><span class="fa-solid fa-angle-left"></span></div>',
+        nextArrow: '<div class="slick-arrow next"><span class="fa-solid fa-angle-right"></span></div>',
+    });
+});
+</script>
+
+</body>
+</html>
